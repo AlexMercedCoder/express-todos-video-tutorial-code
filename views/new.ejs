@@ -1,0 +1,11 @@
+<%- include("partials/head.ejs") %>
+
+<%- include("partials/header.ejs") %>
+
+<main>
+  <h1>Create a New Todo</h1>
+  <form action="/todo" method="post">
+      <input type="text" name="message">
+      <input type="submit" value="create new todo">
+  </form>
+</main>
