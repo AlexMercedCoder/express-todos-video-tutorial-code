@@ -6,6 +6,16 @@ class APIController {
         })
     }
 
+    getTodos(req, res){
+        req.models.Todo.find({}, (err, todos) => {
+            if (err){
+                res.status(400).send(err)
+            } else {
+                res.json(todos)
+            }
+        })
+    }
+
 
 }
 

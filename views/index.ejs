@@ -4,7 +4,11 @@
 
 <main>
     <h1>The Todos App</h1>
+    <form action="/logout" method="post">
+        <input type="submit" value="logout"/>
+    </form>
     <a href="/todo/new" ><button>Create Todo</button></a>
+    
     <ul>
         <% todos.forEach((todo, index) => { %>
 
