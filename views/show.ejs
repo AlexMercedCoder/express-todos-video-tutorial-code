@@ -2,7 +2,7 @@
 
 <%- include("partials/header.ejs") %>
 
-<main>
+<main id="show">
     <h1><%= todo.message %></h1>
     <h2><%= todo.completed ? "completed" : "not completed" %></h2>
     <form action="/todo/complete/<%=todo._id%>?_method=PUT" method="post">

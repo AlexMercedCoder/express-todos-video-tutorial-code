@@ -5,3 +5,15 @@ h1 {
 .completed {
     text-decoration: line-through;
 }
+
+/* ++++++++++++++++++++++++++++++++
+++ MAIN PAGE STYLES
+++++++++++++++++++++++++++++++++ */
+
+input {
+    border: none;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}

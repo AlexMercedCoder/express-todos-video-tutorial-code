@@ -30,7 +30,7 @@ const unauthController = new UnauthController()
 // *********************************
 // MongoDB Connection
 // *********************************
-mongoose.connect(MONGO_URI)
+mongoose.connect(MONGO_URI, {useUnifiedTopology: true, useNewUrlParser: true})
 
 mongoose.connection
 .on("open", () => console.log("Connected to Mongo"))
