@@ -7,19 +7,26 @@
     
     <div id="sign">
         <form action="/signup" method="post">
-            <h2>Signup Form</h2>
+            <h2 class="<%= loggedIn ? 'logged' : null %>">Signup Form</h2>
             <input type="text" name="username" placeholder="username">
             <input type="password" name="password" placeholder="password">
             <input type="submit" value="Signup">
         </form>
     </div>
     <div id="login">
-        <h2>Login Form</h2>
+        <h2 class="<%= loggedIn %>">Login Form</h2>
         <form action="/login" method="post">
             <input type="text" name="username" placeholder="username">
             <input type="password" name="password" placeholder="password">
             <input type="submit" value="Login">
         </form>
     </div>
+
+    <script>
+        const loggedIn = "<%= loggedIn %>"
+        const name = "<%= obj.name %>"
+        alert(name)
+
+    </script>
 
 </main>

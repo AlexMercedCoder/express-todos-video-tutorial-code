@@ -3,7 +3,12 @@ import bcrypt from "bcryptjs"
 class UnauthController {
     
     main(req, res){
-        res.render("main.ejs")
+        res.render("main.ejs", {
+            loggedIn: req.session.loggedIn ? "logged" : null,
+            obj: {
+                name: "Alex Merced"
+            }
+        })
     }
 
     signup(req, res){
